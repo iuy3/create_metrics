@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .maket {
+            width: 300px;
+            height: 200px;
+            border: 25px solid #6330c9;
+            padding: 25px;
+            overflow: auto;
+            position: absolute; left: 500px; top: 20px
+            
+        }        
+    </style>
+
+    <div id = "mydiv" class="maket">
+        В иллюстрации выше намеренно продемонстрирован самый сложный и полный случай, когда у элемента есть ещё и полоса
+        прокрутки. Некоторые браузеры (не все) отбирают место для неё, забирая его у области, отведённой для содержимого
+        (помечена как «content width» выше). Таким образом, без учёта полосы прокрутки ширина области содержимого
+        (content width) будет 300px, но если предположить, что ширина полосы прокрутки равна 16px (её точное значение
+        зависит от устройства и браузера), тогда остаётся только 300 - 16 = 284px, и мы должны это учитывать. Вот почему
+        примеры в этой главе даны с полосой прокрутки. Без неё некоторые вычисления будут проще.
+    </div>
+
+    
+    <table>
+        <tr>
+            <td id ='td'></td>
+        </tr>
+    </table>
+
+  
+
+    <script src="task1.js"></script>
+</body>
+
+</html>
