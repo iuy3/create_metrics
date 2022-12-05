@@ -1,0 +1,12 @@
+.text {
+    width: 300px;
+    height: 200px;
+
+    border: 25px solid #f59090;
+
+    padding: 25px;
+
+    overflow: auto;
+
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn metrics</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id='mydiv' class="text">
+        В иллюстрации выше намеренно продемонстрирован самый сложный и полный случай, когда у элемента есть ещё и полоса
+        прокрутки. Некоторые браузеры (не все) отбирают место для неё, забирая его у области, отведённой для содержимого
+        (помечена как «content width» выше).
+
+        Таким образом, без учёта полосы прокрутки ширина области содержимого (content width) будет 300px, но если
+        предположить, что ширина полосы прокрутки равна 16px (её точное значение зависит от устройства и браузера),
+        тогда остаётся только 300 - 16 = 284px, и мы должны это учитывать. Вот почему примеры в этой главе даны с
+        полосой прокрутки. Без неё некоторые вычисления будут проще.
+   </div>
+   <h3>Нажмите для просмотра значения</h3>
+
+   <table>
+    <tr>
+        <td id = 'clLeft'>client left(граница левого border): </td>
+        <td id = 'cltop'>client top(граница верхнего border): </td>
+    </tr>
+
+    <tr>
+        <td id = 'clw'>client width:(граница от левого border, до правого(изнутри)) </td>
+        <td id = 'clh'>client height:(граница от верхнего border, до нижнего(изнутри)) </td>
+    </tr>
+
+    <tr>
+        <td id = 'offsetH'>offset height:(граница от левого border, до правого(снаружи)) </td>
+        <td id = 'offsetW'>offset width:(граница от верхнего border, до нижнего(снаружи)) </td>
+    </tr>
+
+    <tr>
+        <td id = 'scrollHeight'>scroll height:(вся и невидимая граница сверху вниз, исключая scrollbar): </td>
+        <td id = 'scrollWidth'>scroll width:(вся (и невидимая) граница внутри border исключая scrollbar): </td>
+    </tr>
+
+
+    <tr>
+        <td id = 'scrollLEFT'>scroll LEFT:(прокрутка левая? То изменения влево): </td>
+        <td id = 'scrollTOP'>scroll TOP:(верхняя граница начала документа): </td>
+    </tr>
+
+
+   </table>
+
+
+   <script src="index.js"></script>
+</body>
+
+</html>
