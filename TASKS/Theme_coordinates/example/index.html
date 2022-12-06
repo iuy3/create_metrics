@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id = 'ex'>Example</ul>
+    <ul id = 'hello'>hello</ul>
+    <li>😁</li>
+
+    
+    <script>
+       document.getElementById('hello').style.height = '300px'
+       document.getElementById('hello').style.width = '150px'
+
+
+
+        let elem = document.documentElement
+        console.log(elem.clientWidth, elem.clientHeight);
+        console.log(window.innerWidth, window.innerHeight);
+        console.log(elem.scrollWidth, elem.scrollHeight);
+
+        console.log('scroll top', elem.scrollTop);
+        console.log('pageXOffset', window.pageXOffset,'pageYOffset', Math.round(window.pageYOffset));
+
+
+        //window.scrollTo(0,50)
+        //setInterval(()=> window.scrollBy(0,5),400)
+
+       // setTimeout(()=> ex.scrollIntoView())
+
+       elem.style.overflow = ''
+
+    </script>
+</body>
+</html>

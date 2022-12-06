@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .elem {
+            height: 40px;
+            width: 80px;
+            background-color: bisque;
+            border-radius: 20px;
+            border-color:   rgb(0, 0, 0);
+            border-style: solid;
+            left: 10px;
+            top: 60px;
+            text-align: center;
+            position: absolute;
+            z-index: 999;
+        }
+    </style>
+    <h2 id = 'h2'> </h2>
+
+
+    <div id='mydiv' class="elem">show message
+    </div>
+
+    <li>🌹</li><li></li><li>🌹</li><li></li><li>😝😝😝</li><li></li>
+    <li>🌹</li><li></li><li>🌹</li><li></li><li>🌹</li><li></li>
+    <li>🌹</li><li></li><li>🌹</li><li></li><li>🌹</li><li></li>
+    <li>🌹</li><li></li><li>🌹</li><li></li><li>🌹</li><li></li>
+    <li>🌹</li><li></li><li>🌹</li><li></li><li>🌹</li><li></li>
+    <script>
+    
+    let centerX = document.documentElement.clientWidth / 2;
+let centerY = document.documentElement.clientHeight / 2;
+
+let elem = document.elementFromPoint(centerX, centerY);
+
+elem.style.background = "red";
+elem.append('hello(elementFromPoint)')
+
+    </script>
+
+
+    <script>
+
+        console.log('element from poin (x, y)');
+
+        let element = document.getElementById('mydiv')
+
+
+        let interval = setInterval(()=> document.documentElement(),10)
+
+        let h2 = document.getElementById('h2')
+        h2.append(interval)
+    </script>
+</body>
+</html>
